@@ -174,9 +174,9 @@
 
                 // 会有闪烁不得意这样做, (＞﹏＜)
                 canvas.parent().css("background-image", "url(" + tree.toDataURL('image/png') + ")");
-                canvas.css("background-image", "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)");
+                canvas.css("background", "#a6c0fe");
                 $await(Jscex.Async.sleep(300));
-                canvas.css("background-image", "none");
+                canvas.css("background", "none");
             }));
 
             var jumpAnimate = eval(Jscex.compile("async", function () {
