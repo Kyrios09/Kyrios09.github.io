@@ -174,7 +174,7 @@
 
                 // 会有闪烁不得意这样做, (＞﹏＜)
                 canvas.parent().css("background-image", "url(" + tree.toDataURL('image/png') + ")");
-                canvas.css("background", "#f68084");
+                canvas.css("background", "linear-gradient(120deg, #a6c0fe 0%, #f68084 100%)");
                 $await(Jscex.Async.sleep(300));
                 canvas.css("background", "none");
             }));
